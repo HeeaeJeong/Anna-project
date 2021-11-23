@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input2연습</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>색 선택</legend>
+        <label>선호색상
+            <input type="color" value="#00ff00">
+        </label>
+    </form>
+</fieldset>
+
+<h3>조회기간 선택</h3>
+<label><input type="date" id="start"></label>
+<label><input type="date" id="end"></label>
+
+<h3>시간 선택</h3>
+<label>시작 시간
+    <input type="time" value="09:00"></label><br>
+<label>종료 시간
+    <input type="time" value="18:00"></label>
+<br>
+
+<h3>날짜와 시간선택</h3>
+<label>시작날짜와 시간
+<input type="datetime-local" value="2021-11-23T09:00">
+</label>
+<label> 종료날짜와 시간
+    <input type="datetime-local" value="2021-11-23T18:00">
+</label>
+
+
+<h1>상품 주문서</h1>
+<form>
+    <fieldset>
+        <legend>개인정보</legend>
+        <label>이름
+            <input type="text" placeholder="여백없이 입력" autofocus required>
+        </label><br>
+        <label>연락처
+            <input type="text" name="02" value="010-1234-5678" readonly></label><!--읽을 수 만 있음.-->
+    </fieldset>
+
+    <fieldset>
+        <legend>주문날짜</legend>
+        <label>주문날짜
+            <input type="date"></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>주문정보</legend>
+        <label><input type="checkbox" name="03" value="과테말라">과테말라 안티구아 (100g)
+        <input type="number" min="0" max="5">개</label><br>
+
+        <label><input type="checkbox" name="04" value="인도네시아">인도네시아 만델링 (100g)
+            <input type="number" min="0" max="5">개</label><br>
+
+            <label><input type="checkbox" name="03" value="탐라는도다(블렌딩)">탐라는도다(블렌딩) (100g)
+                <>개</label><br>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="다시 작성">
+
+
+
+    <fieldset>
+        <legend>배송지 정보</legend>
+        <label>주소
+            <input type="text" size="40" required></label><br>
+        <label>전화번호
+            <input type="tel" required></label><br>
+            <label>메 모
+                <textarea clos="40" rows="5" placeholder="수량을 입력해주세요."></textarea>
+        </label>
+    </fieldset>
+
+</form>
+</body>
+</html>

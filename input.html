@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>개인정보</legend>
+        <ul>
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="mail">메일주소</label>
+                <input type="text" id="mail">
+            </li>
+        </ul>
+    </fieldset>
+    <form>
+    <label>email : <input type="text" id="mail"></label>
+    <label>이메일 : <input type="email" id="email"></label>
+    <input type="submit" value="제출">
+    <label for="name">이름</label>
+    <input type="text" id="name">
+    <label> 검색 : <input type="search" id="se"></label>
+    <label> URL : <input type="url" id="url"></label><br>
+    </form>
+<fieldset>
+    <legend>등록정보</legend>
+    <label>참여인원 : 
+        <input type="number" id="number" min="0" max="10" step="1" value="1">
+    </label>
+    <label>지원물품 : 
+        <input type="number" id="stuffs" min="0" max="50" step="5" value="1">
+    </label>
+<label>희망단계 :
+    <input type="range" id="satis" min="1" max="3" value="1">
+</label>
+</fieldset>
+</form>
+
+<fieldset>
+    <legend>신청 과목</legend>
+    <p>이 달에 신청할 과목을 선택하세요.</p>
+    <label><input type="radio" name="subject" value="speaking">회화</label>
+    <label><input type="radio" name="subject" value="grammer" checked>문법</label>
+    <label><input type="radio" name="subject" value="writing">작문</label>
+</fieldset>
+
+<fieldset>
+    <legend>메일링</legend>
+    <p>메일로 받고 싶은 뉴스 주제를 선택해주세요(복수선택가능)</p>
+    <label><input type="checkbox" name="mailing1" value="news">해외단신</label>
+    <label><input type="checkbox" name="mailing2" value="dialong">5분회화</label>
+    <label><input type="checkbox" name="mailing3" value="pops">모닝팝스</label>
+</fieldset>
+
+<fieldset>
+    <legend>메일링</legend>
+    <label>해외단신
+        <input type="checkbox" name="mailing1" value="news">
+    </label>
+<label>5분 회화
+    <input type="checkbox" name="mailing2" value="dialog">
+</label>
+<label>모닝팝스
+    <input type="checkbox" name="mailing3" value="pops">
+</label>
+</fieldset>
+
+<fieldset>
+ <h4>시작 그룹</h4>
+<label>
+    <input type="radio" name="01" value="새 탭 페이지 열기"> 새 탭 페이지 열기<br>
+</label>
+<label>
+    <input type="radio" name="02" value="중단한 위치에서 계속하기">중단한 위치에서 계속하기<br>
+</label>
+<label>
+    <input type="radio" name="03" value="특정 페이지 또는 페이지 모음 열기">특정 페이지 또는 페이지 모음 열기<br>
+</label>
+
+<h4>개인정보 및 보안</h4>
+<label>
+    <input type="checkbox" name="01" value="동기화 및 서비스">동기화 및 서비스<br>
+</label>
+<label>
+    <label><input type="checkbox" name="01" value="로그인 허용">로그인 허용<br>
+</label>
+<label>
+    <label><input type="checkbox" name="01" value="페이지 미리 로드">페이지 미리 로드<br>
+</label>
+</fieldset>
+</body>
+</html>
