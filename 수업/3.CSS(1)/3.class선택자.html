@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스 선택자</title>
+    <style>
+        p{
+            color: blue;
+        }
+        .redtext{
+            color: red; /*글자 색 red*/
+        }
+       h2.accent{
+           background-color: darkblue;
+       }
+       .browntext{
+           color:brown;
+       }
+       .boldtext{
+           font-weight: bold;       }
+
+        .blacktext{
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2 class="accent">클래스 선택자 연습</h2>
+    <p class="redtext">웹문서내에서 특정 부분에만 스타일을 변경하고 싶을 때 사용할 수 있다.</p>
+    <p>클래스 명은 <span class="redtext">임의</span>로 지정할 수 있다.</p>
+    <p>둘이상의 클래스<span class="browntext boldtext">스타일</span>적용</p>
+
+    <p>
+        <ul>
+            <li class="redtext">사과</li>
+            <li class="blacktext">바나나</li>
+            <li class="redtext">오렌지</li>
+            <li class="blacktext">감</li>
+        </ul>
+    </p>
+</body>
+</html>

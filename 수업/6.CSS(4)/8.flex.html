@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 박스 연습</title>
+    <style>
+        #container{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            border: 2px solid black;
+            display: flex;
+        /*    flex-direction: column; */
+        /*    flex-direction: row; 기본값, 왼쪽에서 오른쪽으로 배치 */
+        /*    flex-wrap: wrap; 여러 줄로 표시*/
+        /*      flex-wrap: wrap-reverse; 여러 줄을 역방향으로 표시 */
+        }
+
+        h2{
+          /*  font-weight: bold; -글자 굵게 하기.*/
+            padding: 20px;
+        }
+
+        #container div{
+            width: 200px;
+            border: 2px solid black;
+            background: palevioletred;
+        }
+
+        #box1{order: 2; flex: 1 1 0;}
+        #box2{order: 3; flex: 2 2 0;}
+        #box3{order: 1; flex: 2 2 0;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"><h2>첫번째 박스</h2></div>
+        <div id="box2"><h2>두번째 박스</h2></div>
+        <div id="box3"><h2>세번째 박스</h2></div>
+    </div>
+</body>
+</html>
+

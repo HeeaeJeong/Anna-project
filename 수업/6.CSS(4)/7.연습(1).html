@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: rgb(9,100,160);
+        }
+
+        #container{
+            width: 320px;
+            margin: 0 auto;
+        }
+        .card{
+            width:300px;
+            height:500px;
+            margin:20px 10px;
+            border: 1px solid black;
+            position: relative;
+            background-color: white;
+        }
+
+        .words{
+            position: absolute;
+            left: 10px;
+            top: 300px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media screen and (min-width:768px) and (max-width:1719px){
+            #container{
+            width: 320px;
+            margin: 0 auto;
+        }
+        .card{
+            width:550px;
+            height:250px;
+            margin:20px 10px;
+            border: 1px solid black;
+            position: relative;
+            background-color: white;
+        }
+
+        .words{
+            position: absolute;
+            left: 310px;
+            top: 50px;
+            padding: 10px;
+            text-align: center;
+        }        
+        }
+
+        @media screen and (min-width:1720px){
+            #container{
+            width: 1710px;
+            margin: 0 auto;
+        }
+        .card{
+            float: left;
+            width:550px;
+            height:250px;
+            margin:20px 10px;
+            border: 1px solid black;
+            position: relative;
+            background-color: white;
+        }
+
+        .words{
+            position: absolute;
+            left: 310px;
+            top: 50px;
+            padding: 10px;
+            text-align: center;
+        }}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <img src="1.jpg" class>
+            <div class="words">
+                <h2>일 분 전만큼 먼 시간은 없다.</h2>
+                <h3>김 아무개</h3>
+            </div>
+
+            <div class="card">
+                <img src="1.jpg">
+                <div>
+                    <h2>웃음은 마음의 조깅이다.</h2>
+                    <h3>이 아무개</h3>
+                </div>
+
+                <div class="card">
+                    <img src="1.jpg">
+                    <div>
+                        <h2>낡은 옷은 그냥 입고 새 책을 사라.</h2>
+                        <h3>박 아무개</h3>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>

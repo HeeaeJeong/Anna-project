@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 50px;
+            background: blue;
+        }
+        .box2{
+            width: 300px;
+            height: 50px;
+            background: blueviolet;
+            position: relative;
+            left: -50px;
+            top: -30px;
+            float: left;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background: yellowgreen;
+            position: absolute;
+        }
+
+        #wrap{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        #b1{top: 0; left:0;}
+        #b2{top: 0; right:0;}
+        #b3{bottom:0; left:0;}
+        #b4{bottom:0; right:0;}
+        #b5{top:100px; left: 100px;}
+
+    </style> 
+</head>
+<body>
+    <!--<div class="box1">박스1</div>
+    <div class="box2">박스2</div>-->
+
+
+    <div id="wrap">
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+        <div class="box" id="b4"></div>
+        <div class="box" id="b5"></div>
+    </div>
+</body>
+</html>

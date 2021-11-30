@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 스타일</title>
+</head>
+<style>
+    .class{
+        list-style-type: square;
+    }
+
+    .list{
+        list-style:circle ;
+    }
+
+    .nonelist{
+        list-style: none;
+    }
+
+    .roolist{
+        list-style-type: lower-roman;
+    }
+
+    .imgul{
+        list-style-image: url(doc.pptx);
+        list-style-position: inside;
+    }
+
+    #container{
+        width:50%
+        border: 1px solid black;
+    }
+
+
+</style>
+<body>
+<div id="container">
+    <ul class="class">도서시리즈
+        <li>HTML5</li>
+        <li>하면된다 HTML5</li>
+        <li>재미있는 HTML5</li>
+    </ul>
+</div>
+    <ol class="roolist">참고서적
+        <li>나만 모르는 HTML</li>
+        <li>이제 할 수 있다. HTML</li>
+    </ol>
+</body>
+</html>

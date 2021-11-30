@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 500px;
+            height: 50px;
+            margin: 0 auto;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        #container1{
+            justify-content:flex-start;
+        }
+
+        #container2{
+            justify-content:flex-end;
+        }
+
+        #container3{
+            justify-content:center;
+        }
+
+        #container4{
+            justify-content:space-between;
+        }
+
+        #container5{
+            justify-content:space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>justify-content:flex-start(기본값)</h1>
+    <div class="wrapper" id="container1">
+        <div><p>첫번째</p></div>
+        <div><p>두번째</p></div>
+        <div><p>세번째</p></div>
+    </div>
+
+    <h1>justify-content:flex-end</h1>
+    <div class="wrapper" id="container2">
+        <div><p>첫번째</p></div>
+        <div><p>두번째</p></div>
+        <div><p>세번째</p></div>
+    </div>
+    
+    <h1>justify-content:flex-center</h1>
+    <div class="wrapper" id="container3">
+        <div><p>첫번째</p></div>
+        <div><p>두번째</p></div>
+        <div><p>세번째</p></div>
+    </div>
+
+    <h1>justify-content:space-between</h1>
+    <div class="wrapper" id="container4">
+        <div><p>첫번째</p></div>
+        <div><p>두번째</p></div>
+        <div><p>세번째</p></div>
+    </div>
+
+    <h1>justify-content:space-around</h1>
+    <div class="wrapper" id="container5">
+        <div><p>첫번째</p></div>
+        <div><p>두번째</p></div>
+        <div><p>세번째</p></div>
+    </div>
+</body>
+</html>
