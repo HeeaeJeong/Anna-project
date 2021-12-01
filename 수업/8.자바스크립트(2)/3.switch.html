@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var day=prompt("요일을 입력해주세요 1(일요일)~7(토요일)")
+
+        var day_name;
+        switch(day){
+            case'1' :
+            day_name="일요일";
+            break;
+            case'2' :
+            day_name="월요일";
+            break;
+            day_name="화요일";
+            break;
+            case'4' :
+            day_name="수요일";
+            break;
+            case'5' :
+            day_name="목요일";
+            break;
+            case'6' :
+            day_name="금요일";
+            break;
+            case'7' :
+            day_name="토요일";
+            break;
+            default:
+                day_name="입력오류"; //default에 break;걸지 않아도 됨.
+         
+        }
+
+        document.write(day_name + "입니다.");
+
+        switch(day){
+            case "1" : document.write("일요일입니다.");
+        }
+
+
+    </script>
+</body>
+</html>

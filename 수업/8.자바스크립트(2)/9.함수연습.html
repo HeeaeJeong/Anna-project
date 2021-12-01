@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 연습</title>
+</head>
+<body>
+    <script>
+/*책 값=26,000원
+할인율 10
+배송료 3,000원
+지불금액을 계산*/
+
+        var price=26000;
+        var discount=10;
+        var shipping=3000;
+        var pay=getPay(price, discount, shipping);
+        document.write(pay);
+        
+        function getPlay(price,discount,shipping){
+        total=price-(price*(discount/100))+shipping;
+        return total;
+    }
+       
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Book(title, author, pages, price){
+            this.title=title;
+            this.author=author;
+            this.pages=pages;
+            this.price;
+        }
+
+        var book1=new Book("자바","홍길동",20,100);
+        document.write(book1.title + "/" + book1.author + "/" + book1.pages + "/"+book1.price+"<br>");
+
+        var book2=new Book("css","홍길동",20,100);
+        document.write(book2.title + "/" + book2.author + "/" + book2.pages + "/"+book2.price+"<br>");
+
+
+
+
+        function Car(company,model,year){
+            this.company=company;
+            this.model=model;
+            this.year=year;
+        }
+
+        var car1=new Car("현대","쏘나타","2021");
+        document.write(car1.company + "/" + car1.model +"/" + car1.year);
+
+
+        /*or(변수명 in 객체명){
+            관련 소스 입력
+        }
+        for(var I in b)
+        var b = {age:22, name: 홍길동}*/
+
+        var b1={
+            model:"소나타",
+            year:2021,
+            company:" 현대"
+        };
+
+        var a1="";
+        for(var i in b1){
+            a1 += b1[i] + "<br>";
+        }
+
+        document.write(a1);
+
+    </script>
+</body>
+</html>
