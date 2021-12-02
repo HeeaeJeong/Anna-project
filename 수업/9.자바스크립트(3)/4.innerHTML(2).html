@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인 문제풀이</title>
+</head>
+<body>
+    <div>
+        <h1>책 값 계산</h1>
+        - 책값 : <span id="price">원</span><br>
+        - 할인율 : <span id="discoount">원</span><br>
+        - 배송료 : <span id="shipping">원</span><br>
+        - 지불금액 : <span id="pay">원</span><br>
+    </div>
+    <button onclick="getPay(26000,10,3000)">책값 계산하기</button><br>
+
+    <script>
+        function getPay(price,discount,shipping){
+            var pay;
+            pay=price-(price*(discount/100))+shipping;
+
+            document.getElementById("price").innerHTML=price;
+            document.getElementById("discount").innerHTML=discount;
+            document.getElementById("shipping").innerHTML=shipping;
+            document.getElementById("pay").innerHTML=pay;
+
+        }
+
+    </script>
+    </div>
+</body>
+</html>

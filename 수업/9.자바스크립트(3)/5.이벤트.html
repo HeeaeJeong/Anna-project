@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <style>
+        body{
+            width: 800px;
+            height: 800px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="image">
+        <img src="anna1.jpg" id="cover">
+    </div>
+
+    <button id="btn">사진보기</button>
+    <script>
+
+        var btn=document.querySelector("#btn");
+        btn.onclikc=function(){
+            alert("눌림");
+        }
+
+
+        var coverImage=document.querySelector("#cover");
+        coverImage.onclick=function(){
+            alert("눌렸어요");
+        }
+
+        coverImage.onmouseover=function(){
+            coverImage.style.border="3px solid black";
+        }
+
+    </script>
+</body>
+</html>

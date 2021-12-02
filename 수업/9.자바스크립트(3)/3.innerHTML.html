@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>인라인으로 평균 점수 구하기</title>
+    </head>
+    <body>
+        <div>
+            <h1>점수 계산</h1>
+            -국어 : <span id = "kor"></span>점 <br>
+            -영어 : <span id = "eng"></span>점 <br>
+            -수학 : <span id = "math"></span>점 <br>
+            -합계 : <span id = "sum"></span>점 <br>
+            -평균 : <span id = "avg"></span>점 <br>
+        </div>
+        <button onclick="sumAvg(80,90,100)">평균구하기</button>
+        <script>
+            function sumAvg(kor,eng,math){
+                var sum;
+                var avg;
+
+                sum=kor+eng+math;
+                avg=sum/3;
+
+                document.getElementById("kor").innerHTML=kor;
+                document.getElementById("eng").innerHTML=eng;
+                document.getElementById("math").innerHTML=math;
+                document.getElementById("sum").innerHTML=sum;
+                document.getElementById("avg").innerHTML=avg;
+            }
+
+        </script>
+    </body>
+    </html>
