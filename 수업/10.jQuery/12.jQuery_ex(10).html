@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {    
+    $("#btn1").click(function(){
+        $("#show").text("클릭했어요");
+    });
+    $("#btn2").dbclick(function(){
+        $("#show").text("더블클릭했어요");
+    });
+    $("#box").mouseenter(function(){
+        $("#show").text("마우스 포인터가 들어왔어요");
+    });
+    $("#box").mouseleave(function(){
+        $("#show").text("마우스 포인터가 벗어났어요");
+    });
+
+});
+</script>
+<style>
+#box { width : 120px;    height: 30px; 
+    margin-top: 10px;
+    background-color: yellow; }
+</style>
+</head>	
+<body>
+    <button id="btn1">클릭</button>
+    <button id="btn2">더블 클릭</button>
+    <div id="box">div 요소</div>
+    
+    <p id="show"></p>
+</body>  
+</html>

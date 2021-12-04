@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {    
+    $("#btn1").click(function(){
+        $("p").fadeOut();
+    })
+    $("#btn2").click(function(){
+        $("p").fadeIn();
+    })
+
+});
+</script>
+</head>	
+<body>
+    <button id="btn1">fadeOut()</button>
+    <button id="btn2">fadeIn()</button>
+
+    <p style="background-color:skyblue;">
+        책과 친구는 적고, 좋아야 한다.
+    </p>
+</body>  
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {    
+    $("#btn1").click(function(){
+        $("p").hide();
+    });
+    $("#btn2").click(function(){
+        $("p").show();
+    });
+    $("#btn3").click(function(){
+        $("p").toggle();
+    });
+    
+});
+</script>
+</head>	
+<body>
+    <button id="btn1">hide()</button>
+    <button id="btn2">show()</button>
+    <button id="btn3">toggle()</button>
+
+    <p style="background-color:yellow;">
+        어려울 때 친구가 진정한 친구다.
+    </p>
+</body>  
+</html>
