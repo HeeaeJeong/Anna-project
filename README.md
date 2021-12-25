@@ -1,4 +1,7 @@
 # Anna-project
+안녕하세요<br />
+현재 플랫폼 개발 어플을 목적을 두고 공부하고 있는 Anna입니다.<br />
+
 ## 운영 블로그
 >https://blog.naver.com/smiling003
 
