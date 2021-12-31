@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="Bbs">
+
+<select id="bbslist" resultType="mul.camp.a.dto.BbsDto">
+	SELECT SEQ, ID, REF, STEP, DEPTH, TITLE, CONTENT, WDATE, DEL, READCOUNT
+	FROM BBS
+	ORDER BY REF DESC, STEP ASC
+</select>
+
+<insert id="writebbs" parameterType="mul.camp.a.dto.BbsDto">
+	INSERT INTO BBS(SEQ, ID, REF, STEP, DEPTH, TITLE, CONTENT, WDATE, DEL, READCOUNT)
+	VALUES(SEQ_BBS.NEXTVAL, #{id}, (SELECT NVL(MAX(REF)+1, 0) FROM BBS), 0, 0,       
+											#{title}, #{content}, SYSDATE, 0, 0)
+</insert>
+
+<select id="getBbs" parameterType="java.lang.Integer" resultType="mul.camp.a.dto.BbsDto">
+	SELECT SEQ, ID, REF, STEP, DEPTH, TITLE, CONTENT, WDATE, DEL, READCOUNT
+	FROM BBS
+	WHERE SEQ=#{seq}
+</select>
+
+</mapper>
+
+
+
