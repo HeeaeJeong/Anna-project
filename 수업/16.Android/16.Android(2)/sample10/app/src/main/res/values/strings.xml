@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">sample10</string>
+    <string name="edit_hint">이름 입력</string>
+</resources>
