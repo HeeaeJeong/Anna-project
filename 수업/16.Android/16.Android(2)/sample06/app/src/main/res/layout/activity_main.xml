@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:orientation="horizontal">
+        <Button android:text="1" />
+        <Button android:text="2" />
+        <Button android:text="3" />
+
+        <Button android:text="4" />
+        <Button android:text="6" />
+
+        <Button android:text="7" />
+        <Button android:text="8" />
+        <Button android:text="9" />
+
+        <Button android:text="10" />
+        <Button android:text="11" />
+
+    </GridLayout>
+
+    <!--    컬럼 3칸 row 3줄-->
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
