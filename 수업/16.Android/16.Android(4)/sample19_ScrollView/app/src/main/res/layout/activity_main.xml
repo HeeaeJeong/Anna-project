@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="국어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="영어" android:textSize="50dp" android:paddingBottom="100dp"/>
+            <TextView android:text="수학" android:textSize="50dp" android:paddingBottom="100dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
