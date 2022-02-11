@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <EditText
+            android:layout_width="505dp"
+            android:layout_height="58dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintVertical_bias="0.318"/>
+    <Button
+            android:text="읽기"
+            android:layout_width="211dp"
+            android:layout_height="73dp" android:id="@+id/read"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="48dp"/>
+    <Button
+            android:text="쓰기"
+            android:layout_width="213dp"
+            android:layout_height="70dp" android:id="@+id/write"
+            app:layout_constraintTop_toTopOf="@+id/read" app:layout_constraintStart_toEndOf="@+id/read"
+            android:layout_marginStart="76dp"/>
+    <Button
+            android:text="clear"
+            android:layout_width="506dp"
+            android:layout_height="70dp" android:id="@+id/clear"
+            app:layout_constraintTop_toBottomOf="@+id/read"
+            android:layout_marginTop="36dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.521" app:layout_constraintVertical_bias="0.04"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

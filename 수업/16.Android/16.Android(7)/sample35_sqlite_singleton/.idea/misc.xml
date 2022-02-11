@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidSamples/sample35/app/src/main/res/layout/activity_main.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidSamples/sample35/app/src/main/res/layout/activity_sub.xml" value="0.318218954248366" />
+        <entry key="..\:/Users/User/Downloads/sample35_sqlite_singleton/app/src/main/res/layout/activity_main.xml" value="0.1715686274509804" />
+        <entry key="..\:/Users/User/Downloads/sample35_sqlite_singleton/app/src/main/res/layout/activity_sub.xml" value="0.1715686274509804" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="jbr-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
